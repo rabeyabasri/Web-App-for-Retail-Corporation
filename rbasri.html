@@ -1,0 +1,50 @@
+<form action="\cgi-bin\queryBid.py" method="GET">
+<p><h2>Retrieve suppliers' info for the given part</h2></p>
+<p>Please enter a part's name</p>
+<input type="text"" name="pname"><br>
+<p>Please check the information you need</p>
+<input type="checkbox" name="checkbox" value="S.sid">supplier's id<br>
+<input type="checkbox" name="checkbox" value="S.sname">supplier's name<br>
+<input type="checkbox" name="checkbox" value="S.address">supplier's address<br>
+<input type="checkbox" name="checkbox" value="C.cost">price that supplier charged<br>
+<br>
+<input type="submit" name=query1 value="Submit">
+</form>
+
+<form action="\cgi-bin\queryBid.py" method="GET">
+<br>
+<p><h2>Enter a cost and this query retrieves the names of suppliers who have ever supplied a part for this cost or higher</h2></p>
+<p>Please enter a cost</p>
+<input type="number" name="cost"><br>
+<br>
+<input type="submit" name=query2 value="Submit">
+</form>
+
+<form action="\cgi-bin\queryBid.py" method="GET">
+<br>
+<p><h2>Enter a part id and this query retrieves the names and addresses of suppliers who charged the most for this part</h2></p>
+<p>Please enter the part id</p>
+<input type="text"" name="pid"><br>
+<br>
+<input type="submit" name=query3 value="Submit">
+</form>
+
+<form action="\cgi-bin\queryBid.py" method="GET">
+<br>
+<p><h2>Enter the color and address, and this query retrieves the names of the parts with this given color which were supplied by all the suppliers in the given address</h2></p>
+<p>Please enter the part color</p>
+<input type="text"" name="color"><br>
+<p>Please enter the address of a supplier</p>
+<input type="text"" name="address"><br>
+<br>
+<input type="submit" name=query4 value="Submit">
+</form>
+
+<form action="\cgi-bin\queryBid.py" method="GET">
+<br>
+<p><h2>Enter an address, and this query retrieves the sids and names of suppliers in that address who did not supply any part</h2></p>
+<p>Please enter a Supplier's address</p>
+<input type="text"" name="address"><br>
+<br>
+<input type="submit" name=query5 value="Submit">
+</form>
